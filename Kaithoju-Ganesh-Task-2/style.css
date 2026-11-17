@@ -1,0 +1,60 @@
+/* setting properties to the price table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Styling for Book Now form created in index.html file*/
+#book-now-form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#book-now-form input[type="text"],
+#book-now-form input[type="email"],
+#book-now-form input[type="tel"],
+#book-now-form input[type="text"] 
+{
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#book-now-form input[type="submit"] {
+    width: 100%;
+    padding: 2px;
+    background-color: #f2f2f2;
+}
+
+
+/* The changes needed to be do in the html file are */
+/* need to connect the css with html */
+/* Add the following line to the head section of the html file */
+/* <link rel="stylesheet" href="app.css"> */
+/* Replace "app.css" with the actual path to the css file */
