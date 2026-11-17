@@ -17,7 +17,7 @@ The application is built using HTML, CSS, and JavaScript.
 
 |___ style.css
 
-|___ README.md
+|___ README.md 
 
 ## LIVE LINK
 
