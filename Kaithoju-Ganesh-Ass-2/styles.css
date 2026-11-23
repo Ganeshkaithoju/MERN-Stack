@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(245, 245, 245, 0.5);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 1rem 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo img {
+    height:60px; 
+    width:120px;
+    border-radius: 50%;
+}
+
+.navlinks { 
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.user p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    background-color: rgba(159, 195, 246, 0.447);
+    color: rgba(62, 131, 244, 0.725);
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.user p:hover {
+    transform: translateY(-0.2vh);
+    background-color: rgba(238, 212, 181, 0.608);
+    color: rgba(244, 62, 101, 0.725);
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navlinks a:hover {
+    transform: translateY(-0.5vh);
+    background-color: rgba(238, 212, 181, 0.608);
+    color: rgba(62, 131, 244, 0.725);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+main{
+    margin: 1rem;
+    margin-top: 100px;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    border: 0.3vh solid;
+    max-width: 100%;
+    min-height: 75vh;
+    border-radius: 5px;
+}
+
+#hero-title {
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    letter-spacing: 0.2vw;
+    line-height: 1.2;
+    font-family: Cursive, Courier, monospace;
+    padding-bottom: 1.5vh;
+    color: rgba(0, 0, 0, 0.821);
+    margin: 1rem;
+}
+
+#hero-title span {
+    display: block;
+    color: rgba(62, 131, 244, 0.725);
+}
+
+.leftDev p {
+    font-size: 2vh;
+    line-height: 2.5vh;
+    text-align: justify;
+    margin: 1rem;
+}
+
+#bookBtn {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+    background-color: rgba(62, 131, 244, 0.725);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#bookBtn:hover {
+    transform: translateY(-0.2vh);
+    background-color: rgba(238, 212, 181, 0.608);
+    color: rgba(62, 131, 244, 0.725);
+}
+
+.rightDev img {
+    height: 70vh;
+    width: 50vw;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10%;
+}
+
+.rightDev img:hover{
+    filter: brightness(50%);
+}
+
+
+
+
+/* Hamburger Menu */
+
+.menu-checkbox {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 28px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Mobile Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    /* Navbar */
+
+    .menu-toggle {
+        display: flex;
+        order: 3;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .user {
+        order: 2;
+    }
+
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+
+        width: 200px;
+        padding: 1.5rem;
+
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+        z-index: 1001;
+        order: 4;
+    }
+
+    /* Checkbox Hack */
+
+    .menu-checkbox:checked ~ .navlinks {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        min-height: auto;
+        padding: 1rem;
+    }
+
+    .leftDev {
+        width: 100%;
+    }
+
+    #hero-title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+        text-align: center;
+        letter-spacing: normal;
+        margin: 0.5rem;
+    }
+
+    .leftDev p {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    #bookBtn {
+        display: block;
+        margin: 0 auto 1rem;
+    }
+
+    /* Image below text */
+
+    .rightDev {
+        width: 100%;
+    }
+
+    .rightDev img {
+        width: 100%;
+        height: auto;
+        max-height: 40vh;
+        object-fit: contain;
+        padding: 5px;
+        margin: 0;
+        border-radius: 15px;
+    }
+}
+
