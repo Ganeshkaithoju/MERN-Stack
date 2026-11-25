@@ -48,7 +48,7 @@ Kaithoju-Ganesh-Ass-2/
 
 The project is deployed using Netlify.
 
-**Live Website:** 
+**Live Website:** [mern-stack-kaithoju-ganesh-ass-3.vercel.app](https://mern-stack-kaithoju-ganesh-ass-3.vercel.app)
 
 ---
 
