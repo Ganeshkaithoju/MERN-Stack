@@ -43,8 +43,8 @@ Kaithoju-Ganesh-Ass-2/
 
 The project is deployed using Netlify.
 
-**Live Website:** 
+**Live Website:** [laundryservices-mu.vercel.app](https://laundryservices-mu.vercel.app)
 
 ---
 
-**Developed as part of Assignment 3 – DOM Implementation**
+**Developed as part of Assignment 4 – Project: Laundry Services Web App**
